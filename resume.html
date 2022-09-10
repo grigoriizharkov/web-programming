@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" name="description" content="Junior Data Scientist">
+    <title>RESUME</title>
+    <h1>Жарков Григорий</h1>
+    <h2>Junior Data Scientist</h2>
+    <pre>
+        ⡴⠑⡄⠀⠀⠀⠀⠀⠀⠀ ⣀⣀⣤⣤⣤⣀⡀
+        ⠸⡇⠀⠿⡀⠀⠀⠀⣀⡴⢿⣿⣿⣿⣿⣿⣿⣿⣷⣦⡀
+        ⠀⠀⠀⠀⠑⢄⣠⠾⠁⣀⣄⡈⠙⣿⣿⣿⣿⣿⣿⣿⣿⣆
+        ⠀⠀⠀⠀⢀⡀⠁⠀⠀⠈⠙⠛⠂⠈⣿⣿⣿⣿⣿⠿⡿⢿⣆
+        ⠀⠀⠀⢀⡾⣁⣀⠀⠴⠂⠙⣗⡀⠀⢻⣿⣿⠭⢤⣴⣦⣤⣹⠀⠀⠀⢀⢴⣶⣆
+        ⠀⠀⢀⣾⣿⣿⣿⣷⣮⣽⣾⣿⣥⣴⣿⣿⡿⢂⠔⢚⡿⢿⣿⣦⣴⣾⠸⣼⡿
+        ⠀⢀⡞⠁⠙⠻⠿⠟⠉⠀⠛⢹⣿⣿⣿⣿⣿⣌⢤⣼⣿⣾⣿⡟⠉
+        ⠀⣾⣷⣶⠇⠀⠀⣤⣄⣀⡀⠈⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇
+        ⠀⠉⠈⠉⠀⠀⢦⡈⢻⣿⣿⣿⣶⣶⣶⣶⣤⣽⡹⣿⣿⣿⣿⡇
+        ⠀⠀⠀⠀⠀⠀⠀⠉⠲⣽⡻⢿⣿⣿⣿⣿⣿⣿⣷⣜⣿⣿⣿⡇
+        ⠀⠀ ⠀⠀⠀⠀⠀⢸⣿⣿⣷⣶⣮⣭⣽⣿⣿⣿⣿⣿⣿⣿⠇
+        ⠀⠀⠀⠀⠀⠀⣀⣀⣈⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠇
+        ⠀⠀⠀⠀⠀⠀⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠃
+    </pre>
+</head>
+<body>
+<article>
+    Я решил развиваться в сфере машинного обучения, потому что со школы занимался математикой, учавствовал
+    в олимпиадах, изучал Python. <br>Мне нравится, что анализ данных находится на стыке математики и программирования,
+    потому что так я могу совмещать свои два любимых дела.
+</article>
+
+<br>
+
+<blockquote>
+    <p><i>"Найди себе дело по душе и тебе не придётся работать ни дня в своей жизни"</i></p>
+    <cite>Конфуций</cite>
+</blockquote>
+
+<br>
+
+<aside>
+    В университете курс машинного обучение изучается на уровне ознакомления на третьем курсе, поэтому я развиваюсь
+    самостоятельно через чтение тематической лиетратуры, собственные проекты, участие в соревнованиях и
+    студенческом объединении.
+</aside>
+
+<br>
+
+<section> Навыки
+<ul>
+    <li>Python: Scikit-learn, Pandas, NumPy, Matplotlib, Django</li>
+    <li>SQL: PostgreSQl, Microsoft SQL Server</li>
+    <li>MS Excel, Tableau</li>
+    <li>Git</li>
+</ul>
+</section>
+
+<section> Образование
+    <ul>
+        <li>Университет ИТМО, 2020 - 2024</li>
+        <li>Самарский региональный центр для одаренных детей, 2018 - 2020</li>
+    </ul>
+</section>
+
+<section> Опыт разработки
+    <ul>
+        <li> Веб-сервис на Django для музыкальных рекомендаций </li>
+        <li> Реализация линейных алгоритмов машинного обучения в виде Python-модулей </li>
+        <pre><code>
+     def __gradient_descent(self, x: np.ndarray, y: np.ndarray) -> np.ndarray:
+        """
+        Полынй градиентный спуск, сходимость которого задается в параметрах модели (рассчитывается через ошибку на текущем и предыдущем шаге).
+        В качестве коэффициента при антиградиенте используется простейший динамический шаг = 1 / номер итерации.
+        """
+
+        w = np.ones(x.shape[1])  # инициализируем веса
+        q = self.__calculate_loss(x, y, w, np.arange(0, x.shape[0]))  # считаем потерю для первоначального приближения
+
+        gradients = self.__calculate_gradient(x, y, w, np.arange(0, x.shape[0]))  # вычисляем вектор градиентов
+        w = w - np.array(gradients)  # делаем шаг - обновляем веса
+
+        q_new = self.__calculate_loss(x, y, w, np.arange(0, x.shape[0]))  # считаем полную потерю для новых весов
+
+        step = 2  # задаем переменную для величины шага
+        while abs(q_new - q) > self._convergence_rate:
+            q = q_new  # храним ошибки для текущих и предыдущих значений вектора весов - нужно для сходимости
+
+            gradients = self.__calculate_gradient(x, y, w, np.arange(0, x.shape[0]))
+            w = w - (1 / step) * np.array(gradients)
+
+            q_new = self.__calculate_loss(x, y, w, np.arange(0, x.shape[0]))
+            step += 1  # инкремент переменной градиентного шага
+
+        return w
+        </code></pre>
+        <li> Разработка модели машинного обучения для определения вредоносности файла </li>
+    </ul>
+</section>
+
+<section> Участие в соревнованиях
+    <ul>
+        <li> Titanic на площадке Kaggle </li>
+        <li> Цифровой прорыва 2021 на площадке All Cups </li>
+    </ul>
+</section>
+</body>
+<footer>
+    <section> Контакты
+        <p> <a href="mailto:grigorii_al@mail.ru">grigorii_al@mail.ru</a> &nbsp;
+            <a href="tel:+79303819002">+7(930)-381-90-02</a> &nbsp;
+            <a href="https://github.com/grigoriizharkov">GitHub</a> &nbsp;
+            <a href="https://t.me//grigoriizharkov">Telegram</a>
+        </p>
+    </section>
+</footer>
+</html>
