@@ -10,93 +10,94 @@
 
 <div class="head">
     <section class="head__info">
-        <h1>Жарков Григорий</h1>
-        <h2>Junior Data Scientist</h2>
+        <p>Жарков Григорий</p>
+        <p>Junior Data Scientist</p>
         <img class="head__info__image" src="images/me.jpg" width="250" height="250">
     </section>
 
 </div>
 
-<div class="motivation">
-    Я решил развиваться в сфере машинного обучения, потому что со школы занимался математикой, учавствовал
-    в олимпиадах, изучал Python. <br>Мне нравится, что анализ данных находится на стыке математики и программирования,
-    потому что так я могу совмещать свои два любимых дела.
+<div class="about-me">
+    <section class="about-me__motivation">
+        Я решил развиваться в сфере машинного обучения, потому что со школы занимался математикой, учавствовал
+        в олимпиадах, изучал Python. <br>Мне нравится, что анализ данных находится на стыке математики и программирования,
+        потому что так я могу совмещать свои два любимых дела.
+    </section>
+
+    <blockquote class="about-me__quote">
+        <p><i>"Найди себе дело по душе и тебе не придётся работать ни дня в своей жизни"</i></p>
+        <cite>Конфуций</cite>
+    </blockquote>
+
+    <aside class="about-me__story">
+        В университете курс машинного обучение изучается на уровне ознакомления на третьем курсе, поэтому я развиваюсь
+        самостоятельно через чтение тематической лиетратуры, собственные проекты, участие в соревнованиях и
+        студенческом объединении.
+    </aside>
+    <br>
 </div>
-
-<br>
-
-<blockquote>
-    <p><i>"Найди себе дело по душе и тебе не придётся работать ни дня в своей жизни"</i></p>
-    <cite>Конфуций</cite>
-</blockquote>
-
-<br>
-
-<aside>
-    В университете курс машинного обучение изучается на уровне ознакомления на третьем курсе, поэтому я развиваюсь
-    самостоятельно через чтение тематической лиетратуры, собственные проекты, участие в соревнованиях и
-    студенческом объединении.
-</aside>
 
 <br>
 
 <div class="main">
 
-<section class="main__skills"> Навыки
-    <ul class="main__skills__list">
-        <li>Python: Scikit-learn, Pandas, NumPy, Matplotlib, Django</li>
-        <li>SQL: PostgreSQL, Microsoft SQL Server</li>
-        <li>MS Excel, Tableau</li>
-        <li>Git</li>
-    </ul>
-</section>
+    <section class="main__skills"> Навыки
+        <ul class="main__skills__list">
+            <li>Python: Scikit-learn, Pandas, NumPy, Matplotlib, Django</li>
+            <li>SQL: PostgreSQL, Microsoft SQL Server</li>
+            <li>MS Excel, Tableau</li>
+            <li>Git</li>
+        </ul>
+    </section>
 
-<section class="main__education"> Образование
-    <ul class="main__education__list">
-        <li>Университет ИТМО, 2020 - 2024</li>
-        <li>Самарский региональный центр для одаренных детей, 2018 - 2020</li>
-    </ul>
-</section>
+    <section class="main__education"> Образование
+        <ul class="main__education__list">
+            <li>Университет ИТМО, 2020 - 2024</li>
+            <li>Самарский региональный центр для одаренных детей, 2018 - 2020</li>
+        </ul>
+    </section>
 
-<section class="main__experience"> Опыт разработки
-    <ul class="main__experience__list">
-        <li> Веб-сервис на Django для музыкальных рекомендаций </li>
-        <li> Реализация линейных алгоритмов машинного обучения в виде Python-модулей </li>
-        <pre><code>
-     def __gradient_descent(self, x: np.ndarray, y: np.ndarray) -> np.ndarray:
+    <section class="main__experience"> Опыт разработки
+        <ul class="main__experience__list">
+            <li> Веб-сервис на Django для музыкальных рекомендаций </li>
+            <li> Реализация линейных алгоритмов машинного обучения в виде Python-модулей
+            <pre><code>
+ def __gradient_descent(self, x: np.ndarray, y: np.ndarray) -> np.ndarray:
 
-        w = np.ones(x.shape[1])  # инициализируем веса
-        q = self.__calculate_loss(x, y, w, np.arange(0, x.shape[0]))  # считаем потерю для первоначального приближения
+    w = np.ones(x.shape[1])  # инициализируем веса
+    q = self.__calculate_loss(x, y, w, np.arange(0, x.shape[0]))  # считаем потерю для первоначального приближения
 
-        gradients = self.__calculate_gradient(x, y, w, np.arange(0, x.shape[0]))  # вычисляем вектор градиентов
-        w = w - np.array(gradients)  # делаем шаг - обновляем веса
+    gradients = self.__calculate_gradient(x, y, w, np.arange(0, x.shape[0]))  # вычисляем вектор градиентов
+    w = w - np.array(gradients)  # делаем шаг - обновляем веса
 
-        q_new = self.__calculate_loss(x, y, w, np.arange(0, x.shape[0]))  # считаем полную потерю для новых весов
+    q_new = self.__calculate_loss(x, y, w, np.arange(0, x.shape[0]))  # считаем полную потерю для новых весов
 
-        step = 2  # задаем переменную для величины шага
-        while abs(q_new - q) > self._convergence_rate:
-            q = q_new  # храним ошибки для текущих и предыдущих значений вектора весов - нужно для сходимости
+    step = 2  # задаем переменную для величины шага
+    while abs(q_new - q) > self._convergence_rate:
+        q = q_new  # храним ошибки для текущих и предыдущих значений вектора весов - нужно для сходимости
 
-            gradients = self.__calculate_gradient(x, y, w, np.arange(0, x.shape[0]))
-            w = w - (1 / step) * np.array(gradients)
+        gradients = self.__calculate_gradient(x, y, w, np.arange(0, x.shape[0]))
+        w = w - (1 / step) * np.array(gradients)
 
-            q_new = self.__calculate_loss(x, y, w, np.arange(0, x.shape[0]))
-            step += 1  # инкремент переменной градиентного шага
+        q_new = self.__calculate_loss(x, y, w, np.arange(0, x.shape[0]))
+        step += 1  # инкремент переменной градиентного шага
 
-        return w
-        </code></pre>
-        <li> Разработка модели машинного обучения для определения вредоносности файла </li>
-    </ul>
-</section>
+    return w
+            </code></pre></li>
+            <li> Разработка модели машинного обучения для определения вредоносности файла </li>
+        </ul>
+    </section>
 
-<section class="main__competitions"> Участие в соревнованиях
-    <ul class="main__competitions__list">
-        <li> Хакатон "Нефтекод" при поддержке Газпромнефти</li>
-        <li> Цифровой прорыва 2021 на площадке All Cups </li>
-        <li> Titanic на площадке Kaggle </li>
-    </ul>
-</section>
+    <section class="main__competitions"> Участие в соревнованиях
+        <ul class="main__competitions__list">
+            <li> Хакатон "Нефтекод" при поддержке Газпромнефти</li>
+            <li> Цифровой прорыва 2021 на площадке All Cups </li>
+            <li> Titanic на площадке Kaggle </li>
+        </ul>
+    </section>
 </div>
+</body>
+
 <footer>
     <section> Контакты
         <p> <a href="mailto:grigorii_al@mail.ru">grigorii_al@mail.ru</a> &nbsp;
@@ -107,5 +108,4 @@
     </section>
 </footer>
 
-</body>
 </html>
