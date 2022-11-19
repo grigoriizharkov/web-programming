@@ -6,18 +6,17 @@
     <title>RESUME</title>
 </head>
 
-<body>
+<body class="page">
 
 <div class="head">
     <section class="head__info">
-        <p>Жарков Григорий</p>
-        <p>Junior Data Scientist</p>
-        <img class="head__info__image" src="images/me.jpg" width="250" height="250">
+        <span class="head__info__first-header">Жарков Григорий</span>
+        <span class="head__info__second-header">Junior Data Scientist</span>
     </section>
-
 </div>
 
 <div class="about-me">
+    <img class="about-me__image" src="images/me.jpg">
     <section class="about-me__motivation">
         Я решил развиваться в сфере машинного обучения, потому что со школы занимался математикой, учавствовал
         в олимпиадах, изучал Python. <br>Мне нравится, что анализ данных находится на стыке математики и программирования,
@@ -25,8 +24,8 @@
     </section>
 
     <blockquote class="about-me__quote">
-        <p><i>"Найди себе дело по душе и тебе не придётся работать ни дня в своей жизни"</i></p>
-        <cite>Конфуций</cite>
+        <p class="about-me__quote__text">"Найди себе дело по душе и тебе не придётся работать ни дня в своей жизни"</p>
+        <cite class="about-me__quote__author">Конфуций</cite>
     </blockquote>
 
     <aside class="about-me__story">
@@ -61,20 +60,20 @@
         <ul class="main__experience__list">
             <li> Веб-сервис на Django для музыкальных рекомендаций </li>
             <li> Реализация линейных алгоритмов машинного обучения в виде Python-модулей
-            <pre><code>
- def __gradient_descent(self, x: np.ndarray, y: np.ndarray) -> np.ndarray:
+                <pre><code class="main__experience__algorithm">
+def __gradient_descent(self, x: np.ndarray, y: np.ndarray) -> np.ndarray:
 
     w = np.ones(x.shape[1])  # инициализируем веса
-    q = self.__calculate_loss(x, y, w, np.arange(0, x.shape[0]))  # считаем потерю для первоначального приближения
+    q = self.__calculate_loss(x, y, w, np.arange(0, x.shape[0]))
 
-    gradients = self.__calculate_gradient(x, y, w, np.arange(0, x.shape[0]))  # вычисляем вектор градиентов
+    gradients = self.__calculate_gradient(x, y, w, np.arange(0, x.shape[0]))
     w = w - np.array(gradients)  # делаем шаг - обновляем веса
 
-    q_new = self.__calculate_loss(x, y, w, np.arange(0, x.shape[0]))  # считаем полную потерю для новых весов
+    q_new = self.__calculate_loss(x, y, w, np.arange(0, x.shape[0]))
 
     step = 2  # задаем переменную для величины шага
     while abs(q_new - q) > self._convergence_rate:
-        q = q_new  # храним ошибки для текущих и предыдущих значений вектора весов - нужно для сходимости
+        q = q_new
 
         gradients = self.__calculate_gradient(x, y, w, np.arange(0, x.shape[0]))
         w = w - (1 / step) * np.array(gradients)
@@ -83,10 +82,47 @@
         step += 1  # инкремент переменной градиентного шага
 
     return w
-            </code></pre></li>
+                </code></pre></li>
             <li> Разработка модели машинного обучения для определения вредоносности файла </li>
         </ul>
     </section>
+    <div class="main__table__header">Мое расписание</div>
+    <table class="main__table">
+        <thead>
+        <tr>
+            <th>День</th>
+            <th>Лекции</th>
+            <th>Практики</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Пн</td>
+            <td>Dev Tools</td>
+            <td>ML x2</td>
+        </tr>
+        <tr>
+            <td>Вт</td>
+            <td>None</td>
+            <td>Graphics x2</td>
+        </tr>
+        <tr>
+            <td>Ср</td>
+            <td>Web, ML</td>
+            <td>Dev Tools x2</td>
+        </tr>
+        <tr>
+            <td>Чт</td>
+            <td>None</td>
+            <td>English x2</td>
+        </tr>
+        <tr>
+            <td>Пт</td>
+            <td>Applied Math</td>
+            <td>None</td>
+        </tr>
+        </tbody>
+    </table>
 
     <section class="main__competitions"> Участие в соревнованиях
         <ul class="main__competitions__list">
@@ -96,16 +132,19 @@
         </ul>
     </section>
 </div>
-</body>
 
 <footer>
-    <section> Контакты
-        <p> <a href="mailto:grigorii_al@mail.ru">grigorii_al@mail.ru</a> &nbsp;
-            <a href="tel:+79303819002">+7(930)-381-90-02</a> &nbsp;
-            <a href="https://github.com/grigoriizharkov">GitHub</a> &nbsp;
-            <a href="https://t.me//grigoriizharkov">Telegram</a>
-        </p>
+    <section class="footer__contacts">
+        <span class="footer__contacts__header">Контакты</span>
+        <section class="footer__contacts-list">
+            <a class="footer__contacts__button" href="mailto:grigorii_al@mail.ru" target="_blank">grigorii_al@mail.ru</a> &nbsp;
+            <a class="footer__contacts__button" href="tel:+79303819002">+7(930)-381-90-02</a>&nbsp;
+            <a class="footer__contacts__button" href="https://github.com/grigoriizharkov" target="_blank">GitHub</a> &nbsp;
+            <a class="footer__contacts__button" href="https://t.me//grigoriizharkov" target="_blank">Telegram</a>
+        </section>
     </section>
 </footer>
+</body>
+
 
 </html>
