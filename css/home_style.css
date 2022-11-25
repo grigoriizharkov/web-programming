@@ -18,7 +18,7 @@ body {
     font-weight: bold;
     text-align: center;
     padding: 1%;
-    margin: 3vh 0 1vh;
+    margin: 1vh 0 1vh;
 }
 
 .navigation {
@@ -28,21 +28,25 @@ body {
     border-radius: 10px;
     font-weight: bold;
     text-align: center;
-    margin: 1vh 0 1vh;
-    justify-content: left;
+    margin: 1vh 0 0vh;
+    justify-content: space-around;
+    background-color: #eebfa1;
+    padding: 1%
 }
 
-.navigation__projects {
+.navigation__projects-button,
+.navigation__home-button {
     border-radius: 10px;
     color: black;
     font-size: calc( (100vw - 480px)/(1500 - 480) * (17 - 8) + 8px);
     text-decoration: none;
-    background-color:  rgb(238, 191, 161);
-    padding: 2%;
+    background-color: #e3a686;
+    padding: 1%;
 }
 
-.navigation__projects:hover {
-    background-color: #e3a686;
+.navigation__projects-button:hover,
+.navigation__home-button:hover {
+    background-color: #f5e0c6;
     cursor: pointer;
 }
 
