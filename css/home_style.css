@@ -28,7 +28,7 @@ body {
     border-radius: 10px;
     font-weight: bold;
     text-align: center;
-    margin: 1vh 0 0vh;
+    margin-top: 1vh;
     justify-content: space-around;
     background-color: #eebfa1;
     padding: 1%
@@ -213,6 +213,17 @@ footer {
 .footer__contacts__button:hover {
     background-color: #f5e0c6;
     cursor: pointer;
+}
+
+.footer__loading-time {
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    background-color: rgb(238, 191, 161);
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1%;
+    margin-top: 5%;
 }
 
 @media screen and (max-width: 1000px){
