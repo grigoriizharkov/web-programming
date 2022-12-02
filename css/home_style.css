@@ -34,8 +34,7 @@ body {
     padding: 1%
 }
 
-.navigation__projects-button,
-.navigation__home-button {
+.navigation__button {
     border-radius: 10px;
     color: black;
     font-size: calc( (100vw - 480px)/(1500 - 480) * (17 - 8) + 8px);
@@ -44,10 +43,13 @@ body {
     padding: 1%;
 }
 
-.navigation__projects-button:hover,
-.navigation__home-button:hover {
+.navigation__button:hover {
     background-color: #f5e0c6;
     cursor: pointer;
+}
+
+.active {
+    background-color: aqua;
 }
 
 .about-me {
@@ -224,6 +226,10 @@ footer {
     font-weight: bold;
     padding: 1%;
     margin-top: 5%;
+}
+
+.active {
+    background-color: rgb(238, 191, 161);
 }
 
 @media screen and (max-width: 1000px){

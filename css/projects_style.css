@@ -29,14 +29,13 @@ body {
     border-radius: 10px;
     font-weight: bold;
     text-align: center;
-    margin: 1vh 0 0vh;
+    margin-top: 1vh;
     justify-content: space-around;
     background-color: #eebfa1;
     padding: 1%
 }
 
-.navigation__projects-button,
-.navigation__home-button {
+.navigation__button {
     border-radius: 10px;
     color: black;
     font-size: calc( (100vw - 480px)/(1500 - 480) * (17 - 8) + 8px);
@@ -45,8 +44,7 @@ body {
     padding: 1%;
 }
 
-.navigation__projects-button:hover,
-.navigation__home-button:hover {
+.navigation__button:hover {
     background-color: #f5e0c6;
     cursor: pointer;
 }
@@ -127,4 +125,18 @@ body {
     border-radius: 10px;
     border: 5px solid #e3ac8d;
     box-shadow: 2px 1px 5px #999999;
+}
+
+.active {
+    background-color: rgb(238, 191, 161);
+}
+
+@media screen and (max-width: 1000px) {
+    .second-project__images {
+        display: none;
+    }
+
+    .first-project__image {
+        display: none;
+    }
 }
