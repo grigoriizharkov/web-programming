@@ -48,10 +48,6 @@ body {
     cursor: pointer;
 }
 
-.active {
-    background-color: aqua;
-}
-
 .about-me {
     display: flex;
     flex-direction: row;
@@ -218,8 +214,6 @@ footer {
 }
 
 .footer__loading-time {
-    /*display: flex;*/
-    /*flex-direction: column;*/
     background-color: rgb(238, 191, 161);
     border-radius: 10px;
     font-size: 1rem;
