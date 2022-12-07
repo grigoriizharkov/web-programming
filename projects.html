@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" name="description" content="Projects connected to Machine Learning">
+  <link rel="stylesheet" type="text/css" href="css/projects_style.css"/>
+  <script src="scripts/active-button.js"></script>
+  <title>NOTES ABOUT PROJECTS</title>
+</head>
+
+<body class="page">
+
+<div class="navigation">
+  <a class="navigation__button" href="index.html">На главную</a>
+  <a class="navigation__button" href="projects.html">К заметкам о проектах</a>
+</div>
+
+<div class="head">
+  <section class="head__info">
+    <span class="head__info__first-header">Жарков Григорий</span>
+    <span class="head__info__second-header">Junior Data Scientist</span>
+  </section>
+</div>
+
+<div class="first_project">
+  <a class="first-project__header" href="https://github.com/grigoriizharkov/ML-sect/tree/master/models/linear">
+    Линейные модели
+  </a>
+  <div class="first-project__text">
+    <p class="first-project__text__first-paragraph"> Реализовал линейную и логистическую регрессию. </p>
+
+    <p class="first-project__text__second-paragraph"> Для линейной регресии есть возможность выбора метода нахождения
+    весов: через точное матиематическое решение или же с помощью градиентного спуска. Для последнего можно выбрать
+    как полный спуска, так и mini-batch спуск. Когда же размер batch'a равен 1 получается SGD (стохастический градиентный спуск).
+    Реализованы L1 и L2 регуляризации. Параметры спуска задаются через шаг и условие остановки (через функцию потерь).</p>
+
+    <p class="first-project__text__third-paragraph"> Алгоритм логистической регрессии может быть применен только с
+    использованием градиентного спуска (также полного, mini-batch и SGD). Добавлена регуляризаиця.
+    В отличие от линейной регрессии параметры градиентного спуска задаются через число итераций и шаг.</p>
+  </div>
+
+  <div class="first-project__image">
+    <img class="first-project__image__first-image" src="images/linreg.png" alt="Полиномиальная регрессия">
+  </div>
+
+</div>
+
+<div class="second_project">
+  <a class="second-project__header" href="https://github.com/grigoriizharkov/ML-sect/tree/master/models/trees">
+    Древовидные модели
+  </a>
+  <div class="second-project__text">
+    <p class="second-project__text__first-paragraph"> Реализовал дерево решений и случайные лес.</p>
+
+    <p class="second-project__text__second-paragraph"> Классифицирующее дерево решений строится, уменьшая энтропию
+    в подвыборках объектах. Есть возможность выбрать три критерия остановки: в каждом листе все объекты одного класса,
+    максимальное число листьев, минимальное число объектов в листе. Значения для разделения берутся из выборки, поэтому точность
+    может быть немного ниже sklearn'a, однако она вплотную подходит к нему. Также релизованы функция визуализации дерева и
+    выдачи списка предикатов для каждого объекта для повышения объясняющей способности алгоритма.</p>
+
+    <p class="second-project__text__third-paragraph"> Алгоритм классификации под капотом использует решающее дерево из sklearn для сохранения
+    высокой скорости. Может работать на несбалансированных классах. Для сэмплирования подвыборок для каждого из деревьев используется
+    бутстрап. Метрики сравнимы с sklearn, время работы может быть чуть дольше. Так же на данный момент не реализована совместимость с
+    GridSearchCV. </p>
+  </div>
+
+  <div class="second-project__images">
+    <img class="second-project__images__first-image" src="images/tree.png" alt="Визуализация решающего дерева">
+    <img class="second-project__images__second-image" src="images/tree_score.png" alt="Результаты на метриках качества">
+  </div>
+
+</div>
+
+
+</body>
+
+</html>

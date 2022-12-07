@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8" name="description" content="Junior Data Scientist">
-    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/home_style.css"/>
+    <script src="scripts/loading-time.js"></script>
+    <script src="scripts/active-button.js"></script>
     <title>RESUME</title>
 </head>
 
 <body class="page">
+
+<div class="navigation">
+    <a class="navigation__button" href="index.html">На главную</a>
+    <a class="navigation__button" href="projects.html">К заметкам о проектах</a>
+</div>
 
 <div class="head">
     <section class="head__info">
@@ -16,7 +24,7 @@
 </div>
 
 <div class="about-me">
-    <img class="about-me__image" src="images/me.jpg">
+    <img class="about-me__image" src="images/me.jpg" alt="Моя фотография">
     <section class="about-me__motivation">
         Я решил развиваться в сфере машинного обучения, потому что со школы занимался математикой, учавствовал
         в олимпиадах, изучал Python. <br>Мне нравится, что анализ данных находится на стыке математики и программирования,
@@ -35,8 +43,6 @@
     </aside>
     <br>
 </div>
-
-<br>
 
 <div class="main">
 
@@ -143,8 +149,11 @@ def __gradient_descent(self, x: np.ndarray, y: np.ndarray) -> np.ndarray:
             <a class="footer__contacts__button" href="https://t.me//grigoriizharkov" target="_blank">Telegram</a>
         </section>
     </section>
-</footer>
-</body>
 
+    <section class="footer__loading-time">
+    </section>
+</footer>
+
+</body>
 
 </html>

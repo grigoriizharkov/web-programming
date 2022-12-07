@@ -18,9 +18,39 @@ body {
     font-weight: bold;
     text-align: center;
     padding: 1%;
-    margin: 3vh 0 3vh;
+    margin: 1vh 0 1vh;
 }
 
+.navigation {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.725rem;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1vh;
+    justify-content: space-around;
+    background-color: #eebfa1;
+    padding: 1%
+}
+
+.navigation__button {
+    border-radius: 10px;
+    color: black;
+    font-size: calc( (100vw - 480px)/(1500 - 480) * (17 - 8) + 8px);
+    text-decoration: none;
+    background-color: #e3a686;
+    padding: 1%;
+}
+
+.navigation__button:hover {
+    background-color: #f5e0c6;
+    cursor: pointer;
+}
+
+.active {
+    background-color: aqua;
+}
 
 .about-me {
     display: flex;
@@ -90,8 +120,6 @@ main{
 .main__experience__algorithm{
     font-size: 0.875rem;
 }
-
-
 
 .main__table__header{
     font-size: 1.2rem;
@@ -167,13 +195,15 @@ footer {
     font-size: 1.25rem;
     font-weight: bold;
     height: 75px;
+    padding: 1%;
+    margin-bottom: 5%;
 }
 
 .footer__contacts-list{
     margin-top: 2vh;
 }
 
-a {
+.footer__contacts__button {
     background-color: #e3a686;
     border-radius: 10px;
     color: black;
@@ -182,14 +212,24 @@ a {
     text-decoration: none;
 }
 
-a:hover {
+.footer__contacts__button:hover {
     background-color: #f5e0c6;
     cursor: pointer;
 }
 
-a:active {
-    box-shadow: none;
-    top: 5px;
+.footer__loading-time {
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    background-color: rgb(238, 191, 161);
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1%;
+    margin-top: 5%;
+}
+
+.active {
+    background-color: rgb(238, 191, 161);
 }
 
 @media screen and (max-width: 1000px){
