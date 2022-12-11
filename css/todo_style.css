@@ -21,7 +21,6 @@ body {
     margin: 1vh 0 1vh;
 }
 
-
 .navigation {
     display: flex;
     flex-direction: row;
@@ -51,4 +50,101 @@ body {
 
 .active {
     background-color: rgb(238, 191, 161);
+}
+
+ul {
+    list-style-type: none;
+}
+
+.todo {
+    min-width: 700px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color:  rgb(238, 191, 161);
+    font-size: 1.725rem;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+    padding: 1%;
+    margin: 1vh 0 1vh;
+}
+
+h1 {
+    color: #000000;
+    font-size: 3rem;
+}
+.todo__form {
+    margin: 40px 0px;
+}
+
+.todo__form__input {
+    width: 250px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 1rem;
+    background-color: #f5e0c6;
+}
+
+.todo__from__button {
+    background-color: #e3a686;
+    color: #000000;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 7px;
+    font-size: 1.2rem;
+}
+
+
+.todo__from__button:hover {
+    cursor: pointer;
+    background-color: #f5e0c6;
+}
+
+.todo__items {
+    min-width: 350px;
+}
+.item {
+    background-color: #f5e0c6;
+    padding: 10px;
+    font-size: 1.1rem;
+}
+
+.item:first-child {
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.item:last-child {
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.checkbox {
+    margin-right: 10px;
+}
+
+.delete-button {
+    float: right;
+    background-color: #e3a686;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    padding: 2px 5px;
+    margin-left: 10px;
+    font-size: 1.1rem;
+    font-weight: 550;
+}
+
+.delete-button:hover {
+    cursor: pointer;
+    background-color: white;
+}
+
+.checked {
+    text-decoration: line-through;
 }
