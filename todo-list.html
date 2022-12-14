@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" name="description" content="To-do list">
+    <link rel="stylesheet" type="text/css" href="css/todo_style.css"/>
+    <script src="scripts/active-button.js"></script>
+    <title>RESUME</title>
+</head>
+
+<body class="page">
+
+<div class="navigation">
+    <a class="navigation__button" href="index.html">На главную</a>
+    <a class="navigation__button" href="projects.html">К заметкам о проектах</a>
+    <a class="navigation__button" href="todo-list.html">К списку дел</a>
+</div>
+
+<div class="head">
+    <section class="head__info">
+        <span class="head__info__first-header">Жарков Григорий</span>
+        <span class="head__info__second-header">Junior Data Scientist</span>
+    </section>
+</div>
+
+<header>
+    <div class="todo">
+        <h1 id="todo__header">TODO list</h1>
+        <form class="todo__form">
+            <input class="todo__form__input" type="text" placeholder="Input task...">
+            <button class="todo__from__button" type="submit">+</button>
+        </form>
+        <ul class="todo__items"></ul>
+    </div>
+
+    <script src="scripts/list-operations.js"></script>
+</header>
+
+
+</body>
+
+</html>
