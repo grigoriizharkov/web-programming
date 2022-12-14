@@ -65,13 +65,16 @@ function toggle(id) {
     });
     addToLocalStorage(todos);
 }
+
 function deleteTodo(id) {
     todos = todos.filter(function(item) {
         return item.id != id;
     });
     addToLocalStorage(todos);
 }
+
 getFromLocalStorage();
+
 todoItemsList.addEventListener('click', function(event) {
     if (event.target.type == 'checkbox') {
         toggle(event.target.parentElement.getAttribute('data-key'));
