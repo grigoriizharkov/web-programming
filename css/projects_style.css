@@ -130,6 +130,10 @@ body {
 .active {
     background-color: rgb(238, 191, 161);
 }
+.comment{
+    background-color: #e3a686;
+    margin-top: 5px;
+}
 
 @media screen and (max-width: 1000px) {
     .second-project__images {
