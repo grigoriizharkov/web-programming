@@ -131,8 +131,17 @@ body {
     background-color: rgb(238, 191, 161);
 }
 .comment{
-    background-color: #e3a686;
-    margin-top: 5px;
+    background-color: rgb(238, 191, 161);
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.comment__title {
+    background-color: rgb(238, 191, 161);
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+    text-decoration-line: underline;
 }
 
 @media screen and (max-width: 1000px) {
